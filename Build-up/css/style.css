@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f4f6;
+    overflow: hidden;
+  }
+  
+  
+  .logo-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: moveToCorner 2s ease-in-out forwards;
+  }
+  
+  .logo {
+    width: 70px;
+    height: 70px;
+  }
+  h1{ 
+    font-size: 30px;
+    margin: 25x;
+  }
+  
+  
+  @keyframes moveToCorner {
+    0% {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    100% {
+      top: 10px;
+      left: 10px;
+      transform: translate(0, 0);
+    }
+  }
+
+
+
+
+  @media screen and (max-width:600px)
+{
+    
+}

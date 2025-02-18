@@ -1,0 +1,348 @@
+nav img {
+    width: 70px;
+    height: 70px;
+}
+
+nav h1 {
+    font-size: 30px;
+}
+
+
+
+.details-foods {
+    background-color: #113478;
+
+}
+
+.details-foods .title {
+    width: 100%;
+    margin: 30px 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.details-foods .title h1 {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    width: 40%;
+}
+
+.details-foods .foods {
+    margin: 0 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.details-foods .foods .card {
+    margin: 0 10px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #113478;
+}
+
+.details-foods .foods:hover .card {
+    scale: 1.1;
+    transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.details-foods .foods:hover .card:not(:hover) {
+    opacity: 0.2;
+    backdrop-filter: blur(10px);
+    scale: 1;
+}
+
+.details-foods .foods .card img {
+    width: 70%;
+    margin: 0 15%;
+}
+
+.details-foods .foods .card .discription {
+    color: white;
+    margin: 0 10px;
+}
+
+.details-foods .foods .card .discription h1 {
+
+    font-family: 'Patua One', serif;
+    letter-spacing: 1px;
+    margin: 8px 0;
+    text-align: center;
+}
+
+.details-foods .foods .card .discription p {
+    float: left;
+    margin-left: 2px;
+}
+
+.details-foods .foods .card .discription .price {
+    float: right;
+    font-family: 'Lemon', serif;
+    margin: 10px 20px 10px 0;
+}
+
+/* Food Details */
+
+.details-foods {
+
+    background-color: #113478;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 15px;
+
+}
+
+.details-foods .title {
+    width: 100%;
+    margin: 30px 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.details-foods .title h1 {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    width: 40%;
+}
+
+.details-foods .foods {
+    margin: 0 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.details-foods .foods .card {
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.details-foods .foods:hover .card {
+    scale: 1.1;
+    transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.details-foods .foods:hover .card:not(:hover) {
+    opacity: 0.2;
+    backdrop-filter: blur(10px);
+    scale: 1;
+}
+
+.details-foods .foods .card img {
+    width: 70%;
+    margin: 0 15%;
+}
+
+.details-foods .foods .card .discription {
+    color: white;
+    margin: 0 10px;
+}
+
+.details-foods .foods .card .discription h1 {
+
+    font-family: 'Patua One', serif;
+    letter-spacing: 1px;
+    margin: 8px 0;
+    text-align: center;
+}
+
+.details-foods .foods .card .discription p {
+    float: left;
+    margin-left: 2px;
+}
+
+.details-foods .foods .card .discription .price {
+    float: right;
+    font-family: 'Lemon', serif;
+    margin: 10px 20px 10px 0;
+}
+
+.price {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section {
+    margin-top: 100px;
+}
+
+button {
+    font-weight: bold;
+}
+
+.box {
+    background-color: rgba(225, 225, 225, .5);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#starRating i {
+    color: gold;
+    font-size: 20px;
+    margin-right: 4px;
+}
+
+
+
+
+
+
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ccc;
+    border-top-color: #113478;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    align-items: normal;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1 1 25%;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 5px;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons li {
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.footer-bottom a {
+    color: #113478;
+    /* لون الرابط */
+    text-decoration: none;
+    /* إزالة الخط */
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+    /* إضافة خط عند التمرير */
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+    nav img {
+        width: 35px;
+        height: 35px;
+    }
+
+    nav h1 {
+        font-size: 15px;
+    }
+
+    .col-md-6 {
+
+        width: 80%;
+        margin: 10%;
+    }
+
+    h5,
+    p {
+        text-align: center;
+    }
+
+    .box {
+        position: relative;
+        border-radius: 40px;
+
+    }
+
+    button {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+
+    }
+
+
+}

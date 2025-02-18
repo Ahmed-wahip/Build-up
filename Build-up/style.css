@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600&family=Lemon&family=Patua+One&family=Poppins:wght@200;400;500;600;700;800;900&display=swap');
+
+:root {
+    --bg-color: #fff;
+    --second-bg-color: #113478;
+    --text-color: #ffffff;
+    --main-color: #fff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: var(--second-bg-color);
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    height: auto;
+    position: relative;
+    background-color: var(--second-bg-color);
+}
+
+nav .wrapper {
+    position: absolute;
+    top: 0;
+    height: 10vh;
+    width: 100%;
+}
+
+nav .nav-container {
+    width: 100%;
+    height: 100%;
+    /* margin: 0 60px; */
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .nav-container img {
+    width: 130px;
+}
+
+nav .nav-container .links a {
+    font-size: 1.3rem;
+    color: var(--main-color);
+    text-decoration: none;
+    margin: 0 20px;
+    transition: 0.2s linear;
+}
+
+nav .nav-container .links a:hover {
+    color: var(--second-bg-color);
+
+}
+
+nav .nav-container .search {
+    width: 320px;
+    box-shadow: 1px 1px 20px white;
+    height: 5vh;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid white;
+}
+
+nav .nav-container .search input {
+    width: 86%;
+    padding-left: 15px;
+    font-size: 1 rem;
+    height: 100%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+nav .nav-container .search i {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    width: 14%;
+    cursor: pointer;
+    height: 100%;
+}
+
+.social-icons {
+    display: flex;
+    /* لترتيب الأيقونات بجانب بعضها */
+    justify-content: start;
+    /* ل توسيط الأيقونات أفقياً */
+}
+
+.social-icons a {
+    margin: 10px 10px;
+    /* لإضافة مساحة بين الأيقونات */
+}
+
+.social-icons img {
+    width: 50px;
+    /* تحديد حجم الأيقونات */
+    height: 50px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+    /* تكبير الأيقونة قليلاً عند التمرير */
+    opacity: 0.8;
+    /* جعل الأيقونة شفافة قليلاً */
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+/* باقي أنماط CSS لشريط التنقل */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    /* اجعل لون الخلفية شفافًا */
+    color: #333;
+    /* لون النص */
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: none;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* landing page */
+
+.landingpage {
+    background-image: url(images/back.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landingpage .content {
+    display: flex;
+    margin-top: 150px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.landingpage .content .heading {
+    margin-top: -100px;
+    max-width: 460px;
+    width: 100%;
+}
+
+.landingpage .content .heading h3 {
+    color: #ff0000;
+    font-size: 1.6rem;
+}
+
+.landingpage .content .heading h1 {
+    color: black;
+    line-height: -2rem;
+    font-size: 4.5rem;
+}
+
+.landingpage .content .heading p {
+    color: black;
+    font-size: 1.2rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+}
+
+
+.btn {
+    display: inline-block;
+    box-shadow: 1px 1px 10px white;
+    /* يجعل العنصر يتصرف ككتلة داخلية */
+    padding: 10px 20px;
+    /* يضيف مساحة داخلية للنص */
+    background-color: var(--second-bg-color);
+    /* لون الخلفية (يمكنك تغييره) */
+    color: white;
+    font-size: 18px;
+    /* لون النص */
+    text-decoration: none;
+    /* يزيل الخط تحت الرابط */
+    border: none;
+    /* يزيل حدود الزر الافتراضية */
+    border-radius: 10px;
+    /* يجعل الزوايا دائرية */
+    cursor: pointer;
+    /* يغير شكل المؤشر عند المرور عليه */
+    /* ... أي تنسيقات أخرى تريدها ... */
+}
+
+.btn .material-symbols-outlined {
+    vertical-align: middle;
+    /* يضع الأيقونة في المنتصف عموديًا */
+    margin-left: 5px;
+    /* يضيف مسافة بين النص والأيقونة */
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    /* تغيير لون الخلفية عند الوقوف على الزر */
+}
+
+.landingpage .content .image img {
+    width: 800px;
+    transform: rotate(40deg);
+}
+
+
+
+/* about us */
+.aboutus {
+    box-shadow: -5px -5px 100px black;
+    background: var(--second-bg-color);
+}
+
+.about-img img {
+    width: 30vw;
+    border-radius: 10%;
+    animation: floatImg 3s ease-in-out infinite;
+}
+
+.aboutus .container {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.aboutus .container .aboutus-content {
+    color: white;
+    width: 30%;
+}
+
+.aboutus .container img {
+    filter: drop-shadow(0 0 10px white);
+}
+
+.aboutus .container .aboutus-content h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Patua One', serif;
+    color: rgb(156, 46, 6);
+    letter-spacing: 1px;
+    font-size: 4rem;
+}
+
+.aboutus .container .aboutus-content p {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+
+
+/* Food Details */
+
+.details-foods {
+    background-color: var(--second-bg-color);
+
+}
+
+.details-foods .title {
+    width: 100%;
+    margin: 30px 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.details-foods .title h1 {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    width: 40%;
+}
+
+.details-foods .foods {
+    margin: 0 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.details-foods .foods .card {
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.details-foods .foods:hover .card {
+    scale: 1.1;
+    transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.details-foods .foods:hover .card:not(:hover) {
+    opacity: 0.2;
+    backdrop-filter: blur(10px);
+    scale: 1;
+}
+
+.details-foods .foods .card img {
+    width: 70%;
+    margin: 0 15%;
+}
+
+.details-foods .foods .card .discription {
+    color: white;
+    margin: 0 10px;
+}
+
+.details-foods .foods .card .discription h1 {
+
+    font-family: 'Patua One', serif;
+    letter-spacing: 1px;
+    margin: 8px 0;
+    text-align: center;
+}
+
+.details-foods .foods .card .discription p {
+    float: left;
+    margin-left: 2px;
+}
+
+.details-foods .foods .card .discription .price {
+    float: right;
+    font-family: 'Lemon', serif;
+    margin: 10px 20px 10px 0;
+}
+
+/* contact */
+.contact {
+    padding-bottom: 7rem;
+    background-color: var(--bg-color);
+}
+
+.contact .heading {
+    padding: 3rem 5rem;
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box .input-field {
+    width: 49%;
+    margin: 0.8rem 0;
+}
+
+.contact form .input-box .input-field input,
+.contact form .textarea-field textarea {
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: transparent;
+    border-radius: 1rem;
+    border: 0.2rem solid var(--second-bg-color);
+}
+
+.contact form .input-box .input-field input::placeholder,
+.contact form .textarea-field textarea::placeholder {
+    color: var(--second-bg-color);
+}
+
+.contact form .textarea-field textarea {
+    resize: none;
+}
+
+.contact form .btn {
+    margin-top: 3rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    align-items: normal;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1 1 25%;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 5px;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons li {
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.footer-bottom a {
+    color: #007bff;
+    /* لون الرابط */
+    text-decoration: none;
+    /* إزالة الخط */
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+    /* إضافة خط عند التمرير */
+}
+
+
+
+
+/* Media Queries for even finer control */
+/* @media (max-width: 768px) {
+
+
+    nav .nav-container {
+        flex-direction: column;
+
+        align-items: flex-start;
+  
+        padding: 10px;
+    }
+
+    nav .nav-container img {
+        margin-bottom: 10px;
+    }
+
+    nav .nav-container .links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav .nav-container .links a {
+        margin: 5px 0;
+    }
+
+    nav .nav-container .search {
+        width: 100%;
+        margin-top: 10px;
+    }
+} */
+ 
+
+
+@media (max-width: 768px) {
+
+    
+
+    /* تعديل ارتفاع الأقسام */
+
+    section {
+        height: auto;
+        padding: 10px;
+    }
+
+    /* تعديل شريط التنقل */
+    nav .nav-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav .nav-container .links {
+        flex-direction: column;
+    }
+
+    nav .nav-container .links a {
+        margin: 10px 0;
+        font-size: 1.2rem;
+    }
+
+    /* جعل البحث يأخذ عرض الشاشة بالكامل */
+    nav .nav-container .search {
+        width: 90%;
+    }
+
+    /* تحسين اللاندينج بيج */
+    .landingpage .content {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 80px;
+    }
+
+    .landingpage .content .heading h1 {
+        font-size: 2.5rem;
+    }
+
+    .landingpage .content .image img {
+        width: 100%;
+        transform: rotate(0);
+    }
+
+    /* تعديل عرض قسم "من نحن" */
+    .aboutus .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .aboutus .container .aboutus-content {
+        width: 90%;
+    }
+
+    .about-img img {
+        width: 80%;
+    }
+
+    /* تعديل طريقة عرض الأطعمة */
+    .details-foods .foods {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .details-foods .foods .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    /* تعديل عرض قسم التواصل */
+    .contact form .input-box {
+        flex-direction: column;
+    }
+
+    .contact form .input-box .input-field {
+        width: 100%;
+    }
+
+    /* تحسين الفوتر */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
+
+
+
